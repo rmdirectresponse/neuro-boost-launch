@@ -31,12 +31,18 @@ const PerformanceScale = () => {
             </div>
             
             {/* Marker Position */}
-            <div className="absolute -top-12 left-4 transform -translate-x-1/2">
+            <div className="absolute -top-12 left-12 transform -translate-x-1/2">
               <div className="bg-foreground text-background px-3 py-1 rounded-lg text-sm font-semibold relative">
                 Tú estás aquí
                 <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-foreground"></div>
               </div>
-              <div className="w-1 h-8 bg-foreground mx-auto mt-1"></div>
+              {/* Stylized Arrow */}
+              <div className="flex justify-center mt-1">
+                <svg className="w-4 h-8 text-foreground" viewBox="0 0 24 48" fill="currentColor">
+                  <path d="M12 2 L12 40 M12 40 L8 36 M12 40 L16 36" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
+                  <circle cx="12" cy="44" r="3" fill="currentColor"/>
+                </svg>
+              </div>
             </div>
           </div>
           
