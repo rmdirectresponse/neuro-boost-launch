@@ -30,7 +30,7 @@ const VSLSection = ({ onVideoComplete }: VSLSectionProps) => {
   };
 
   return (
-    <section className="bg-background py-8 sm:py-12 px-4">
+    <section className="bg-background py-4 sm:py-6 px-4">
       <div className="max-w-4xl mx-auto text-center">
         {/* Headline */}
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight mb-4 sm:mb-6 px-2">
