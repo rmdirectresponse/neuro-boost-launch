@@ -59,9 +59,14 @@ const GuaranteeSection = () => {
           </div>
           
           <div className="mt-6">
-            <button className="neuro-cta-primary text-xl px-12 py-4">
+            <a 
+              href="https://checkout.kiwify.com.br/SEU_LINK_AQUI"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="neuro-cta-primary text-xl px-12 py-4 inline-block"
+            >
               Comenzar Mi Transformación Mental
-            </button>
+            </a>
             <p className="text-sm text-muted-foreground mt-3">
               Respaldado por nuestra garantía incondicional de 7 días
             </p>

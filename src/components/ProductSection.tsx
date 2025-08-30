@@ -57,9 +57,14 @@ const ProductSection = () => {
             
             {/* CTA Button */}
             <div className="text-center lg:text-left">
-              <button className="neuro-cta-primary text-xl px-12 py-4 mb-4">
+              <a 
+                href="https://checkout.kiwify.com.br/SEU_LINK_AQUI"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="neuro-cta-primary text-xl px-12 py-4 mb-4 inline-block"
+              >
                 Acceder al Programa Completo
-              </button>
+              </a>
               <p className="text-sm text-muted-foreground">
                 Pago único • Sin mensualidades • Acceso inmediato
               </p>
