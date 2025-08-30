@@ -74,14 +74,17 @@ const DetailedResultsOffer = () => {
             </div>
             
             {/* CTA Button */}
-            <a 
-              href="https://pay.kiwify.com/O6nCmTA" 
-              target="_blank" 
-              rel="noopener noreferrer"
+            <button 
+              onClick={() => {
+                const element = document.getElementById('oferta-unica');
+                if (element) {
+                  element.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
               className="inline-block w-full sm:w-auto bg-neuro-green hover:bg-neuro-green-dark text-white font-bold py-4 px-8 sm:px-12 rounded-full text-lg sm:text-xl transform transition-all duration-300 hover:scale-105 shadow-lg animate-pulse-glow mb-4 text-center"
             >
-              ¡Adquirir ahora!
-            </a>
+              ¡Ver Oportunidad Única!
+            </button>
             
             <p className="text-xs sm:text-sm text-muted-foreground px-2" style={{lineHeight: '1.1'}}>
               Acceso inmediato • Garantía de 7 días • Sin suscripciones
