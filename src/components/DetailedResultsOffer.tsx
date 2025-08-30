@@ -64,7 +64,7 @@ const DetailedResultsOffer = () => {
                   20% OFF
                 </span>
               </div>
-              <p className="text-muted-foreground line-through text-sm sm:text-base">Precio regular: $27,00</p>
+              <p className="text-muted-foreground line-through text-sm sm:text-base">Precio regular: $27,50</p>
             </div>
             
             {/* Urgency Timer */}
