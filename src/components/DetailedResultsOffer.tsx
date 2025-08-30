@@ -2,7 +2,7 @@ import { Lock, Clock } from "lucide-react";
 
 const DetailedResultsOffer = () => {
   return (
-    <section className="py-8 sm:py-12 px-4 bg-muted/30">
+    <section id="oferta-unica" className="py-8 sm:py-12 px-4 bg-muted/30">
       <div className="max-w-4xl mx-auto">
         <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center mb-6 sm:mb-8 px-2" style={{lineHeight: '1.1'}}>
           Sus resultados de memoria y concentración

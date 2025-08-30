@@ -1,6 +1,6 @@
 const ProductSection = () => {
   return (
-    <section id="oferta-unica" className="py-16 px-4 bg-gradient-to-br from-muted/30 to-background">
+    <section className="py-16 px-4 bg-gradient-to-br from-muted/30 to-background">
       <div className="max-w-6xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           
