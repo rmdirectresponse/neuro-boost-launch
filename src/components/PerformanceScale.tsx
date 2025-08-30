@@ -1,0 +1,57 @@
+import { useEffect, useState } from "react";
+
+const PerformanceScale = () => {
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setVisible(true);
+    }, 400);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  return (
+    <section className={`py-12 px-4 transition-opacity duration-800 ${visible ? 'opacity-100' : 'opacity-0'}`}>
+      <div className="max-w-4xl mx-auto">
+        <h3 className="neuro-subheadline text-center mb-8">
+          Escala de Rendimiento Mental
+        </h3>
+        
+        <div className="neuro-card">
+          {/* Performance Bar */}
+          <div className="relative mb-8">
+            <div className="h-8 gradient-performance rounded-full"></div>
+            
+            {/* Labels */}
+            <div className="flex justify-between mt-3 text-sm font-semibold">
+              <span className="text-destructive">Bajo</span>
+              <span className="text-yellow-600">Medio</span>
+              <span className="text-secondary">Alto</span>
+            </div>
+            
+            {/* Marker Position */}
+            <div className="absolute -top-12 left-4 transform -translate-x-1/2">
+              <div className="bg-foreground text-background px-3 py-1 rounded-lg text-sm font-semibold relative">
+                Tú estás aquí
+                <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-foreground"></div>
+              </div>
+              <div className="w-1 h-8 bg-foreground mx-auto mt-1"></div>
+            </div>
+          </div>
+          
+          <div className="text-center space-y-4">
+            <p className="neuro-body text-muted-foreground">
+              Tu puntuación actual te sitúa en el nivel <strong className="text-destructive">Bajo</strong> de rendimiento mental.
+            </p>
+            <p className="neuro-body text-muted-foreground">
+              Con el programa NeuroActivo, puedes mejorar significativamente tu posición en esta escala.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default PerformanceScale;

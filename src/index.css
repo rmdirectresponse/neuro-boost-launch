@@ -2,41 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* NeuroActivo Design System - Landing Page Optimizada para Conversão */
 
 @layer base {
   :root {
+    /* Core Brand Colors */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 0 0% 8%;
 
+    /* NeuroActivo Brand Palette */
+    --neuro-orange: 25 100% 50%;        /* #FF6A00 */
+    --neuro-orange-light: 25 100% 60%;  /* Lighter orange */
+    --neuro-orange-dark: 25 100% 40%;   /* Darker orange */
+    
+    --neuro-green: 160 100% 41%;        /* #00D084 */
+    --neuro-green-light: 160 100% 51%;  /* Lighter green */
+    --neuro-green-dark: 160 100% 31%;   /* Darker green */
+    
+    --neuro-blue: 220 100% 50%;         /* For "Diagnóstico" highlight */
+    
+    /* Neutral Colors */
+    --neuro-gray-light: 210 20% 95%;
+    --neuro-gray: 210 10% 60%;
+    --neuro-gray-dark: 210 15% 25%;
+    
+    /* Semantic Colors */
+    --primary: var(--neuro-orange);
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: var(--neuro-green);
+    --secondary-foreground: 0 0% 100%;
+    
+    --accent: var(--neuro-blue);
+    --accent-foreground: 0 0% 100%;
+    
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: var(--foreground);
+    
+    --muted: var(--neuro-gray-light);
+    --muted-foreground: var(--neuro-gray);
+    
+    --border: 210 20% 90%;
+    --input: 210 20% 95%;
+    --ring: var(--neuro-orange);
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
+    --radius: 1rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,6 +110,148 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
   }
+}
+
+/* NeuroActivo Custom Animations & Utilities */
+@layer components {
+  /* Typography Presets */
+  .neuro-headline {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold leading-tight;
+  }
+  
+  .neuro-subheadline {
+    @apply text-xl md:text-2xl font-semibold;
+  }
+  
+  .neuro-body {
+    @apply text-base md:text-lg leading-relaxed;
+  }
+
+  /* Button Variants */
+  .neuro-cta-primary {
+    @apply bg-secondary hover:bg-secondary/90 text-secondary-foreground font-bold py-4 px-8 rounded-full transform transition-all duration-300 hover:scale-105 hover:shadow-xl;
+  }
+  
+  .neuro-cta-secondary {
+    @apply bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-3 px-6 rounded-full transform transition-all duration-300 hover:scale-105;
+  }
+
+  /* Card Styles */
+  .neuro-card {
+    @apply bg-card border border-border rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300;
+  }
+  
+  .neuro-testimonial-card {
+    @apply bg-card border border-border rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300;
+  }
+
+  /* Progress Animations */
+  .progress-circle {
+    @apply relative inline-flex items-center justify-center;
+  }
+  
+  .progress-bar {
+    @apply bg-muted rounded-full overflow-hidden;
+  }
+  
+  .progress-fill {
+    @apply h-full bg-gradient-to-r from-primary to-secondary transition-all duration-1000 ease-out;
+  }
+
+  /* Fade Animation Classes */
+  .fade-in {
+    animation: fadeIn 0.8s ease-in-out forwards;
+    opacity: 0;
+  }
+  
+  .slide-up {
+    animation: slideUp 0.6s ease-out forwards;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  /* Hidden State */
+  .neuro-hidden {
+    display: none !important;
+  }
+}
+
+@layer utilities {
+  /* Custom Gradients */
+  .gradient-neuro {
+    background: linear-gradient(135deg, hsl(var(--neuro-orange)) 0%, hsl(var(--neuro-green)) 100%);
+  }
+  
+  .gradient-performance {
+    background: linear-gradient(90deg, #ef4444 0%, #f59e0b 50%, hsl(var(--neuro-green)) 100%);
+  }
+  
+  /* Text Gradients */
+  .text-gradient-neuro {
+    background: linear-gradient(135deg, hsl(var(--neuro-orange)), hsl(var(--neuro-green)));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes progressFill {
+  from {
+    width: 0%;
+  }
+  to {
+    width: var(--progress-width, 27%);
+  }
+}
+
+@keyframes circularProgress {
+  from {
+    stroke-dasharray: 0 100;
+  }
+  to {
+    stroke-dasharray: var(--progress-value, 27) 100;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--muted));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--primary));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--primary) / 0.8);
 }
