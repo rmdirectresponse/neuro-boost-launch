@@ -73,14 +73,17 @@ const VSLSection = ({ onVideoComplete }: VSLSectionProps) => {
         
         {/* Call to Action Button */}
         <div className="mt-8">
-          <a 
-            href="https://pay.kiwify.com/O6nCmTA" 
-            target="_blank" 
-            rel="noopener noreferrer"
+          <button 
+            onClick={() => {
+              const element = document.getElementById('oferta-unica');
+              if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+              }
+            }}
             className="inline-block w-full sm:w-auto bg-neuro-green hover:bg-neuro-green-dark text-white font-bold py-4 px-8 sm:px-12 rounded-full text-lg sm:text-xl transform transition-all duration-300 hover:scale-105 shadow-lg text-center"
           >
             Acceder al Programa Completo
-          </a>
+          </button>
           <p className="text-sm text-muted-foreground mt-3" style={{lineHeight: '1.1'}}>
             Acceso inmediato • Resultados personalizados
           </p>
