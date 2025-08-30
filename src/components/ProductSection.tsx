@@ -1,5 +1,3 @@
-import productMockup from "@/assets/product-mockup.jpg";
-
 const ProductSection = () => {
   return (
     <section className="py-16 px-4 bg-gradient-to-br from-muted/30 to-background">
@@ -10,7 +8,7 @@ const ProductSection = () => {
           <div className="order-2 lg:order-1">
             <div className="relative">
               <img
-                src={productMockup}
+                src="/lovable-uploads/f5135ddb-d953-4392-9115-7f2bda4591d1.png"
                 alt="Programa de Ejercicios Mentales NeuroActivo"
                 className="w-full h-auto rounded-2xl shadow-2xl"
               />
