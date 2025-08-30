@@ -58,7 +58,7 @@ const ProductSection = () => {
             {/* CTA Button */}
             <div className="text-center lg:text-left">
               <a 
-                href="https://checkout.kiwify.com.br/SEU_LINK_AQUI"
+                href="https://pay.kiwify.com/O6nCmTA"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="neuro-cta-primary text-xl px-12 py-4 mb-4 inline-block"

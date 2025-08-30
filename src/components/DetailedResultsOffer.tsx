@@ -75,7 +75,7 @@ const DetailedResultsOffer = () => {
             
             {/* CTA Button */}
             <a 
-              href="https://checkout.kiwify.com.br/SEU_LINK_AQUI"
+              href="https://pay.kiwify.com/O6nCmTA"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block w-full sm:w-auto bg-neuro-green hover:bg-neuro-green-dark text-white font-bold py-4 px-8 sm:px-12 rounded-full text-lg sm:text-xl transform transition-all duration-300 hover:scale-105 shadow-lg animate-pulse-glow mb-4 text-center no-underline"

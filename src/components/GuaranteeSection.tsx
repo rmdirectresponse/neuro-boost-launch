@@ -60,7 +60,7 @@ const GuaranteeSection = () => {
           
           <div className="mt-6">
             <a 
-              href="https://checkout.kiwify.com.br/SEU_LINK_AQUI"
+              href="https://pay.kiwify.com/O6nCmTA"
               target="_blank"
               rel="noopener noreferrer"
               className="neuro-cta-primary text-xl px-12 py-4 inline-block"
