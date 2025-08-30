@@ -42,9 +42,15 @@
     --muted: var(--neuro-gray-light);
     --muted-foreground: var(--neuro-gray);
     
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
     --border: 210 20% 90%;
     --input: 210 20% 95%;
     --ring: var(--neuro-orange);
+
+    --popover: var(--background);
+    --popover-foreground: var(--foreground);
 
     --radius: 1rem;
 
