@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import drJoseImage from "@/assets/dr-jose.jpg";
 
 interface VSLSectionProps {
@@ -7,6 +7,7 @@ interface VSLSectionProps {
 
 const VSLSection = ({ onVideoComplete }: VSLSectionProps) => {
   const [videoTime, setVideoTime] = useState(0);
+  const playerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     // Timer desabilitado - contenido visible imediatamente
@@ -22,6 +23,28 @@ const VSLSection = ({ onVideoComplete }: VSLSectionProps) => {
 
     // return () => clearInterval(timer);
   }, [onVideoComplete]);
+
+  useEffect(() => {
+    // Load vturb player script and create player element
+    if (playerRef.current && !document.querySelector('#vid-68b2581b2a3de119c45c2154')) {
+      // Create vturb-smartplayer element
+      const playerElement = document.createElement('vturb-smartplayer');
+      playerElement.setAttribute('id', 'vid-68b2581b2a3de119c45c2154');
+      playerElement.style.display = 'block';
+      playerElement.style.margin = '0 auto';
+      playerElement.style.width = '100%';
+      
+      playerRef.current.appendChild(playerElement);
+      
+      // Load script if not already loaded
+      if (!document.querySelector('script[src*="68b2581b2a3de119c45c2154"]')) {
+        const script = document.createElement('script');
+        script.src = 'https://scripts.converteai.net/1a6f3b4b-51fd-49a8-b4bb-593f4d735ddc/players/68b2581b2a3de119c45c2154/v4/player.js';
+        script.async = true;
+        document.head.appendChild(script);
+      }
+    }
+  }, []);
 
   const formatTime = (seconds: number) => {
     const mins = Math.floor(seconds / 60);
@@ -45,17 +68,7 @@ const VSLSection = ({ onVideoComplete }: VSLSectionProps) => {
         
         {/* Video Container */}
         <div className="relative max-w-3xl mx-auto px-2 sm:px-0">
-          <div dangerouslySetInnerHTML={{
-            __html: `
-              <vturb-smartplayer id="vid-68b2581b2a3de119c45c2154" style="display: block; margin: 0 auto; width: 100%;"></vturb-smartplayer>
-              <script type="text/javascript">
-                var s=document.createElement("script"); 
-                s.src="https://scripts.converteai.net/1a6f3b4b-51fd-49a8-b4bb-593f4d735ddc/players/68b2581b2a3de119c45c2154/v4/player.js"; 
-                s.async=true;
-                document.head.appendChild(s);
-              </script>
-            `
-          }} />
+          <div ref={playerRef} className="w-full"></div>
         </div>
         
         {/* Call to Action Button */}
