@@ -4,7 +4,7 @@ const DetailedResultsOffer = () => {
   return (
     <section className="py-8 sm:py-12 px-4 bg-muted/30">
       <div className="max-w-4xl mx-auto">
-        <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center mb-6 sm:mb-8 px-2">
+        <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center mb-6 sm:mb-8 px-2" style={{lineHeight: '1.1'}}>
           Sus resultados de memoria y concentración
         </h3>
         
@@ -36,10 +36,10 @@ const DetailedResultsOffer = () => {
 
         {/* CTA Section */}
         <div className="text-center mb-6 sm:mb-8 px-2">
-          <p className="text-lg sm:text-xl mb-4">
+          <p className="text-lg sm:text-xl mb-4" style={{lineHeight: '1.1'}}>
             Obtenga aquí su material y el resultado detallado de la prueba.
           </p>
-          <p className="text-primary font-bold text-base sm:text-lg mb-4 sm:mb-6">
+          <p className="text-primary font-bold text-base sm:text-lg mb-4 sm:mb-6" style={{lineHeight: '1.1'}}>
             ¡Oferta por tiempo limitado!
           </p>
         </div>
@@ -52,7 +52,7 @@ const DetailedResultsOffer = () => {
               ¡Oportunidad Única!
             </div>
             
-            <h4 className="text-xl sm:text-2xl font-bold mb-4 px-2">
+            <h4 className="text-xl sm:text-2xl font-bold mb-4 px-2" style={{lineHeight: '1.1'}}>
               Prueba completa con análisis + Material de ejercicios
             </h4>
             
@@ -78,7 +78,7 @@ const DetailedResultsOffer = () => {
               ¡Adquirir ahora!
             </button>
             
-            <p className="text-xs sm:text-sm text-muted-foreground px-2">
+            <p className="text-xs sm:text-sm text-muted-foreground px-2" style={{lineHeight: '1.1'}}>
               Acceso inmediato • Garantía de 7 días • Sin suscripciones
             </p>
           </div>

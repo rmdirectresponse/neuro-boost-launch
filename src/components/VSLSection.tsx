@@ -33,13 +33,13 @@ const VSLSection = ({ onVideoComplete }: VSLSectionProps) => {
     <section className="bg-background py-4 sm:py-6 px-4">
       <div className="max-w-4xl mx-auto text-center">
         {/* Headline */}
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight mb-4 sm:mb-6 px-2">
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6 px-2" style={{lineHeight: '1.1'}}>
           ¡Tus resultados ya están listos! Mira el video del Dr. José para recibir tu{" "}
           <span className="text-neuro-blue">Diagnóstico</span>
         </h2>
         
         {/* Subheadline */}
-        <p className="text-lg sm:text-xl text-muted-foreground mb-6 sm:mb-8 px-2">
+        <p className="text-lg sm:text-xl text-muted-foreground mb-6 sm:mb-8 px-2" style={{lineHeight: '1.1'}}>
           ¡Haz clic en el video de abajo!
         </p>
         
@@ -79,7 +79,7 @@ const VSLSection = ({ onVideoComplete }: VSLSectionProps) => {
           <button className="w-full sm:w-auto bg-neuro-green hover:bg-neuro-green-dark text-white font-bold py-4 px-8 sm:px-12 rounded-full text-lg sm:text-xl transform transition-all duration-300 hover:scale-105 shadow-lg">
             Acceder al Programa Completo
           </button>
-          <p className="text-sm text-muted-foreground mt-3">
+          <p className="text-sm text-muted-foreground mt-3" style={{lineHeight: '1.1'}}>
             Acceso inmediato • Resultados personalizados
           </p>
         </div>
