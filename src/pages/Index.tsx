@@ -71,35 +71,24 @@ const Index = () => {
         </footer>
 
         {/* Disclaimer / Compliance */}
-        <div className="py-8 px-4 bg-muted/30 border-t border-border">
-          <div className="max-w-6xl mx-auto text-center">
-            <div className="text-xs text-muted-foreground space-y-2 leading-relaxed">
-              <p className="font-semibold mb-4">AVISO IMPORTANTE - DISCLAIMER</p>
+        <div className="py-4 px-4 bg-muted/20 border-t border-border/50">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="text-xs text-muted-foreground/80 space-y-1 leading-tight">
+              <p className="font-medium text-xs mb-2">AVISO IMPORTANTE</p>
               
               <p>
-                <strong>Finalidad Comercial y Publicitaria:</strong> Este sitio web tiene fines comerciales y publicitarios. 
-                El contenido presentado está diseñado para promocionar el programa NeuroActivo y generar ventas del producto.
+                <span className="font-medium">Finalidad Comercial:</span> Este sitio tiene fines comerciales y publicitarios para promocionar NeuroActivo. 
+                <span className="font-medium ml-2">Aviso Médico:</span> La información presentada NO sustituye el consejo médico profesional ni constituye atención médica.
               </p>
               
               <p>
-                <strong>Aviso Médico:</strong> La información, técnicas y ejercicios presentados en este sitio web y en el 
-                programa NeuroActivo NO sustituyen el consejo, diagnóstico o tratamiento médico profesional. 
-                No constituyen atención médica ni reemplazan la consulta con un profesional de la salud calificado.
+                Si tienes condiciones médicas preexistentes, consulta con tu médico antes de usar este programa. 
+                Los resultados pueden variar entre individuos y no se garantizan los mismos resultados mostrados en testimonios. 
+                Uso bajo tu propia responsabilidad.
               </p>
               
-              <p>
-                Si tienes alguna condición médica, neurológica o psicológica preexistente, o si estás bajo tratamiento médico, 
-                consulta con tu médico antes de participar en cualquier programa de entrenamiento cognitivo. 
-                En caso de emergencia médica, busca atención médica inmediata.
-              </p>
-              
-              <p>
-                Los resultados pueden variar entre individuos. Los testimonios y resultados mostrados no garantizan 
-                que obtendrás los mismos resultados. El uso de este programa es bajo tu propia responsabilidad.
-              </p>
-              
-              <p className="text-xs opacity-70 mt-4">
-                © 2024 NeuroActivo. Todos los derechos reservados. Este sitio web y su contenido están protegidos por derechos de autor.
+              <p className="text-xs opacity-60 mt-2">
+                © 2024 NeuroActivo. Todos los derechos reservados.
               </p>
             </div>
           </div>
