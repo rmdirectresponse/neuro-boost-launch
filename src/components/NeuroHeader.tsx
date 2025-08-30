@@ -7,7 +7,7 @@ const NeuroHeader = () => {
       <div className="h-2 bg-primary w-full"></div>
       
       {/* Logo Section */}
-      <div className="bg-white py-3 px-4">
+      <div className="bg-white pt-4 pb-3 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="flex items-center justify-center gap-3">
             <div className="bg-gradient-to-br from-primary to-secondary p-3 rounded-full">
