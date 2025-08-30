@@ -4,12 +4,13 @@ import { Brain } from "lucide-react";
 const TestResultsSection = () => {
   const [progress, setProgress] = useState(0);
   const [visible, setVisible] = useState(false);
+  const [animatedProgress, setAnimatedProgress] = useState(0);
 
   useEffect(() => {
     // Trigger animation when component becomes visible
     const timer = setTimeout(() => {
       setVisible(true);
-      // Animate progress to 27%
+      // Start animating progress to 27%
       setTimeout(() => {
         setProgress(27);
       }, 500);
@@ -17,6 +18,27 @@ const TestResultsSection = () => {
 
     return () => clearTimeout(timer);
   }, []);
+
+  // Animate the number incrementally
+  useEffect(() => {
+    if (progress > 0) {
+      const duration = 2000; // 2 seconds
+      const steps = progress;
+      const stepDuration = duration / steps;
+      
+      let currentStep = 0;
+      const interval = setInterval(() => {
+        currentStep++;
+        setAnimatedProgress(currentStep);
+        
+        if (currentStep >= progress) {
+          clearInterval(interval);
+        }
+      }, stepDuration);
+      
+      return () => clearInterval(interval);
+    }
+  }, [progress]);
 
   return (
     <section className={`py-8 sm:py-12 px-4 transition-opacity duration-800 ${visible ? 'opacity-100' : 'opacity-0'}`}>
@@ -62,7 +84,7 @@ const TestResultsSection = () => {
                 {/* Center Text */}
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center">
-                    <div className="text-3xl sm:text-4xl font-bold text-primary mb-1">{progress}%</div>
+                    <div className="text-3xl sm:text-4xl font-bold text-primary mb-1">{animatedProgress}%</div>
                     <div className="text-xs sm:text-sm text-muted-foreground font-semibold">TU PUNTUACIÓN</div>
                   </div>
                 </div>
