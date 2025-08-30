@@ -9,21 +9,18 @@ const VSLSection = ({ onVideoComplete }: VSLSectionProps) => {
   const [videoTime, setVideoTime] = useState(0);
 
   useEffect(() => {
-    // Simulate video timer - in real implementation, you'd use actual video events
-    const timer = setInterval(() => {
-      setVideoTime(prev => {
-        const newTime = prev + 1;
-        
-        // Trigger content reveal at 1min11s (71 seconds)
-        if (newTime === 71) {
-          onVideoComplete();
-        }
-        
-        return newTime;
-      });
-    }, 1000);
+    // Timer desabilitado - contenido visible imediatamente
+    // const timer = setInterval(() => {
+    //   setVideoTime(prev => {
+    //     const newTime = prev + 1;
+    //     if (newTime === 71) {
+    //       onVideoComplete();
+    //     }
+    //     return newTime;
+    //   });
+    // }, 1000);
 
-    return () => clearInterval(timer);
+    // return () => clearInterval(timer);
   }, [onVideoComplete]);
 
   const formatTime = (seconds: number) => {
@@ -82,11 +79,11 @@ const VSLSection = ({ onVideoComplete }: VSLSectionProps) => {
           <div className="h-2 bg-muted rounded-full overflow-hidden">
             <div 
               className="h-full bg-primary transition-all duration-1000 ease-out"
-              style={{ width: `${Math.min((videoTime / 330) * 100, 100)}%` }}
+              style={{ width: '100%' }}
             ></div>
           </div>
           <p className="text-sm text-muted-foreground mt-2">
-            Las secciones adicionales aparecerán después de 1:11 minutos
+            Todos os elementos já estão visíveis
           </p>
         </div>
       </div>
