@@ -1,18 +1,16 @@
 import { Star } from "lucide-react";
-import luciaImage from "@/assets/lucia-testimonial.jpg";
-import emilyImage from "@/assets/emily-testimonial.jpg";
 
 const TestimonialsSection = () => {
   const testimonials = [
     {
       name: "Lucía Martínez",
-      image: luciaImage,
+      image: "/lovable-uploads/b9262d67-fbd7-4c14-acd6-6051935aa03c.png",
       text: "Después de usar NeuroActivo por 3 semanas, he notado una mejora increíble en mi concentración. Ahora puedo trabajar por horas sin distraerme. ¡Lo recomiendo totalmente!",
       rating: 5
     },
     {
       name: "Emily Johnson",
-      image: emilyImage,
+      image: "/lovable-uploads/3f012877-9159-4152-a531-0c78e32bedd3.png",
       text: "Los ejercicios mentales son muy fáciles de seguir y realmente funcionan. Mi memoria ha mejorado notablemente y me siento más alerta durante todo el día. Excelente programa.",
       rating: 5
     }
