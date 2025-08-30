@@ -61,7 +61,7 @@ const DetailedResultsOffer = () => {
               <div className="flex items-center justify-center gap-2 sm:gap-3 mb-2 flex-wrap">
                 <span className="text-2xl sm:text-3xl font-bold text-secondary">$10,00</span>
                 <span className="bg-destructive text-destructive-foreground px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm font-bold">
-                  20% OFF
+                  36% OFF
                 </span>
               </div>
               <p className="text-muted-foreground line-through text-sm sm:text-base">Precio regular: $27,50</p>
