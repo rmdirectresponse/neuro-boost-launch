@@ -1,5 +1,3 @@
-import { Brain } from "lucide-react";
-
 const NeuroHeader = () => {
   return (
     <header className="w-full">
@@ -9,13 +7,12 @@ const NeuroHeader = () => {
       {/* Logo Section */}
       <div className="bg-white pt-4 pb-3 px-4">
         <div className="max-w-7xl mx-auto">
-          <div className="flex items-center justify-center gap-3">
-            <div className="bg-gradient-to-br from-primary to-secondary p-3 rounded-full">
-              <Brain className="w-8 h-8 text-white" />
-            </div>
-            <h1 className="text-3xl font-bold text-foreground">
-              Neuro<span className="text-primary">Activo</span>
-            </h1>
+          <div className="flex items-center justify-center">
+            <img
+              src="/lovable-uploads/3c50eaf7-d93a-4946-8379-c2578b731c17.png"
+              alt="NeuroActivo - Programa de Ejercicios Mentales"
+              className="h-16 w-auto"
+            />
           </div>
         </div>
       </div>
