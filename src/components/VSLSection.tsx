@@ -1,3 +1,4 @@
+
 import { useEffect, useState, useRef } from "react";
 import drJoseImage from "@/assets/dr-jose.jpg";
 
@@ -58,7 +59,7 @@ const VSLSection = ({ onVideoComplete }: VSLSectionProps) => {
         {/* Headline */}
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6 px-2" style={{lineHeight: '1.1'}}>
           ¡Tus resultados ya están listos! Mira el video del Dr. José para recibir tu{" "}
-          <span className="text-neuro-blue">Diagnóstico</span>
+          <span className="text-primary">Diagnóstico</span>
         </h2>
         
         {/* Subheadline */}
