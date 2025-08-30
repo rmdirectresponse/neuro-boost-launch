@@ -77,7 +77,7 @@ const VSLSection = ({ onVideoComplete }: VSLSectionProps) => {
         {/* Call to Action Button */}
         <div className="mt-8">
           <button className="w-full sm:w-auto bg-neuro-green hover:bg-neuro-green-dark text-white font-bold py-4 px-8 sm:px-12 rounded-full text-lg sm:text-xl transform transition-all duration-300 hover:scale-105 shadow-lg">
-            ¡Ver Mi Diagnóstico Completo!
+            Acceder al Programa Completo
           </button>
           <p className="text-sm text-muted-foreground mt-3">
             Acceso inmediato • Resultados personalizados
