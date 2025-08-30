@@ -19,22 +19,22 @@ const TestResultsSection = () => {
   }, []);
 
   return (
-    <section className={`py-12 px-4 transition-opacity duration-800 ${visible ? 'opacity-100' : 'opacity-0'}`}>
+    <section className={`py-8 sm:py-12 px-4 transition-opacity duration-800 ${visible ? 'opacity-100' : 'opacity-0'}`}>
       <div className="max-w-6xl mx-auto">
         {/* Section Title */}
-        <div className="text-center mb-12">
-          <h3 className="neuro-headline text-center mb-4">
+        <div className="text-center mb-8 sm:mb-12">
+          <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center mb-4 px-2">
             Recibe hoy tu resultado y el material exclusivo con técnicas y ejercicios mentales
           </h3>
         </div>
 
         {/* Results Box */}
-        <div className="neuro-card max-w-4xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
+        <div className="bg-card rounded-lg p-4 sm:p-6 lg:p-8 shadow-lg max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-6 sm:gap-8 items-center">
             
             {/* Left Column - Circular Progress */}
             <div className="text-center">
-              <div className="relative w-48 h-48 mx-auto mb-4">
+              <div className="relative w-40 sm:w-48 h-40 sm:h-48 mx-auto mb-4">
                 {/* Background Circle */}
                 <svg className="w-full h-full transform -rotate-90" viewBox="0 0 100 100">
                   <circle
@@ -62,8 +62,8 @@ const TestResultsSection = () => {
                 {/* Center Text */}
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center">
-                    <div className="text-4xl font-bold text-primary mb-1">{progress}%</div>
-                    <div className="text-sm text-muted-foreground font-semibold">TU PUNTUACIÓN</div>
+                    <div className="text-3xl sm:text-4xl font-bold text-primary mb-1">{progress}%</div>
+                    <div className="text-xs sm:text-sm text-muted-foreground font-semibold">TU PUNTUACIÓN</div>
                   </div>
                 </div>
               </div>
@@ -71,21 +71,21 @@ const TestResultsSection = () => {
             
             {/* Right Column - Result Status */}
             <div className="text-center md:text-left">
-              <div className="flex items-center justify-center md:justify-start gap-4 mb-6">
-                <div className="bg-primary/10 p-4 rounded-full">
-                  <Brain className="w-12 h-12 text-primary" />
+              <div className="flex items-center justify-center md:justify-start gap-3 sm:gap-4 mb-4 sm:mb-6">
+                <div className="bg-primary/10 p-3 sm:p-4 rounded-full">
+                  <Brain className="w-8 sm:w-12 h-8 sm:h-12 text-primary" />
                 </div>
                 <div>
-                  <p className="text-lg font-semibold text-muted-foreground mb-2">Resultado:</p>
-                  <p className="text-3xl font-bold text-destructive">Malo</p>
+                  <p className="text-base sm:text-lg font-semibold text-muted-foreground mb-2">Resultado:</p>
+                  <p className="text-2xl sm:text-3xl font-bold text-destructive">Malo</p>
                 </div>
               </div>
               
-              <div className="space-y-3 text-muted-foreground">
-                <p className="neuro-body">
+              <div className="space-y-3 text-muted-foreground text-sm sm:text-base">
+                <p>
                   Tu puntuación indica que hay áreas importantes de mejora en tu rendimiento cognitivo.
                 </p>
-                <p className="neuro-body">
+                <p>
                   El material NeuroActivo está específicamente diseñado para ayudarte a mejorar estos resultados.
                 </p>
               </div>
