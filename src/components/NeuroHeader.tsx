@@ -11,7 +11,7 @@ const NeuroHeader = () => {
             <img
               src="/lovable-uploads/3c50eaf7-d93a-4946-8379-c2578b731c17.png"
               alt="NeuroActivo - Programa de Ejercicios Mentales"
-              className="h-16 w-auto"
+              className="h-24 w-auto"
             />
           </div>
         </div>
