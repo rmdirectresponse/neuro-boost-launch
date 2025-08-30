@@ -78,13 +78,12 @@ const Index = () => {
               
               <p>
                 <span className="font-medium">Finalidad Comercial:</span> Este sitio tiene fines comerciales y publicitarios para promocionar NeuroActivo. 
-                <span className="font-medium ml-2">Aviso Médico:</span> La información presentada NO sustituye el consejo médico profesional ni constituye atención médica.
+                <span className="font-medium ml-2">Resultados Variables:</span> Los resultados pueden variar de persona a persona y no se garantizan los mismos resultados mostrados.
               </p>
               
               <p>
-                Si tienes condiciones médicas preexistentes, consulta con tu médico antes de usar este programa. 
-                Los resultados pueden variar entre individuos y no se garantizan los mismos resultados mostrados en testimonios. 
-                Uso bajo tu propia responsabilidad.
+                Los testimonios, videos y contenido presentado pueden ser fictícios, dramatizaciones o generados por inteligencia artificial con fines ilustrativos y comerciales. 
+                El uso de este programa es bajo tu propia responsabilidad.
               </p>
               
               <p className="text-xs opacity-60 mt-2">
