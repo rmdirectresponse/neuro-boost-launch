@@ -61,9 +61,14 @@ const Index = () => {
             <p className="text-lg mb-8 opacity-80">
               Únete a miles de personas que ya mejoraron su rendimiento mental
             </p>
-            <button className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-bold py-4 px-12 rounded-full text-xl transform transition-all duration-300 hover:scale-105">
+            <a 
+              href="https://pay.kiwify.com/O6nCmTA"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-secondary hover:bg-secondary/90 text-secondary-foreground font-bold py-4 px-12 rounded-full text-xl transform transition-all duration-300 hover:scale-105 no-underline"
+            >
               Comenzar Ahora - $10.00
-            </button>
+            </a>
             <p className="text-sm mt-4 opacity-60">
               Garantía de 7 días • Pago único • Acceso inmediato
             </p>
