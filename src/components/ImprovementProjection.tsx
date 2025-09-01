@@ -16,20 +16,20 @@ const ImprovementProjection = () => {
   }, []);
 
   const progressData = [
-    { days: 7, label: "Inicio del Protocolo", progress: 25, color: "bg-yellow-500" },
-    { days: 14, label: "Continuando", progress: 60, color: "bg-orange-500" },
-    { days: 21, label: "Continuando", progress: 90, color: "bg-secondary" }
+    { days: 7, label: "Protocol Start", progress: 25, color: "bg-yellow-500" },
+    { days: 14, label: "Continuing", progress: 60, color: "bg-orange-500" },
+    { days: 21, label: "Continuing", progress: 90, color: "bg-secondary" }
   ];
 
   return (
     <section className={`py-12 px-4 transition-opacity duration-800 ${visible ? 'opacity-100' : 'opacity-0'}`}>
       <div className="max-w-6xl mx-auto">
         <h3 className="neuro-headline text-center mb-4">
-          Después del material NeuroActivo:
+          After the NeuroActive material:
         </h3>
         
         <p className="text-center neuro-body text-muted-foreground mb-12">
-          Proyección de mejora con el programa de ejercicios mentales
+          Improvement projection with the mental exercise program
         </p>
 
         <div className="grid md:grid-cols-3 gap-8">
@@ -39,7 +39,7 @@ const ImprovementProjection = () => {
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-4">
                   <span className="text-2xl font-bold text-primary">{item.days}</span>
                 </div>
-                <h4 className="text-xl font-bold mb-2">{item.days} días</h4>
+                <h4 className="text-xl font-bold mb-2">{item.days} days</h4>
                 <p className="text-muted-foreground">{item.label}</p>
               </div>
               
@@ -55,7 +55,7 @@ const ImprovementProjection = () => {
                   ></div>
                 </div>
                 <p className="text-sm font-semibold text-muted-foreground">
-                  {item.progress}% de mejora
+                  {item.progress}% improvement
                 </p>
               </div>
             </div>
@@ -66,7 +66,7 @@ const ImprovementProjection = () => {
           <div className="inline-flex items-center gap-2 bg-secondary/10 px-6 py-3 rounded-full">
             <div className="w-3 h-3 bg-secondary rounded-full animate-pulse"></div>
             <span className="font-semibold text-secondary">
-              Resultados basados en estudios clínicos
+              Results based on clinical studies
             </span>
           </div>
         </div>

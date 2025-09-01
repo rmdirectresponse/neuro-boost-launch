@@ -34,27 +34,27 @@ const Index = () => {
             <div className="text-center">
               {/* Opportunity Badge */}
               <div className="inline-block bg-primary text-primary-foreground px-4 sm:px-6 py-2 rounded-full font-bold text-base sm:text-lg mb-4 sm:mb-6">
-                ¡Oportunidad Única!
+                Unique Opportunity!
               </div>
               
               <h4 className="text-xl sm:text-2xl font-bold mb-4" style={{lineHeight: '1.1'}}>
-                Prueba completa con análisis + Material de ejercicios
+                Complete test with analysis + Exercise material
               </h4>
               
               {/* Price */}
               <div className="mb-4 sm:mb-6">
                 <div className="flex items-center justify-center gap-2 sm:gap-3 mb-2 flex-wrap">
-                  <span className="text-2xl sm:text-3xl font-bold text-secondary">$10,00</span>
+                  <span className="text-2xl sm:text-3xl font-bold text-secondary">$10.00</span>
                   <span className="bg-destructive text-destructive-foreground px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm font-bold">
                     36% OFF
                   </span>
                 </div>
-                <p className="text-muted-foreground line-through text-sm sm:text-base">Precio regular: $27,50</p>
+                <p className="text-muted-foreground line-through text-sm sm:text-base">Regular price: $27.50</p>
               </div>
               
               {/* Urgency Message */}
               <div className="flex items-center justify-center gap-2 mb-4 sm:mb-6 text-destructive">
-                <span className="font-semibold text-sm sm:text-base">Esta oferta expira pronto</span>
+                <span className="font-semibold text-sm sm:text-base">This offer expires soon</span>
               </div>
               
               {/* CTA Button - Now redirects to Kiwify */}
@@ -64,11 +64,11 @@ const Index = () => {
                 rel="noopener noreferrer"
                 className="inline-block w-full sm:w-auto bg-neuro-green hover:bg-neuro-green-dark text-white font-bold py-4 px-8 sm:px-12 rounded-full text-lg sm:text-xl transform transition-all duration-300 hover:scale-105 shadow-lg animate-pulse-glow mb-4 text-center no-underline"
               >
-                ¡Ver Oportunidad Única!
+                See Unique Opportunity!
               </a>
               
               <p className="text-xs sm:text-sm text-muted-foreground" style={{lineHeight: '1.1'}}>
-                Acceso inmediato • Garantía de 7 días • Sin suscripciones
+                Instant access • 7-day guarantee • No subscriptions
               </p>
             </div>
           </div>
@@ -102,10 +102,10 @@ const Index = () => {
         <footer className="py-12 px-4 bg-foreground text-background">
           <div className="max-w-4xl mx-auto text-center">
             <h4 className="text-2xl font-bold mb-4">
-              ¿Listo para transformar tu mente?
+              Ready to transform your mind?
             </h4>
             <p className="text-lg mb-8 opacity-80">
-              Únete a miles de personas que ya mejoraron su rendimiento mental
+              Join thousands of people who have already improved their mental performance
             </p>
             <a 
               href="https://pay.kiwify.com/O6nCmTA"
@@ -113,10 +113,10 @@ const Index = () => {
               rel="noopener noreferrer"
               className="inline-block bg-secondary hover:bg-secondary/90 text-secondary-foreground font-bold py-4 px-12 rounded-full text-xl transform transition-all duration-300 hover:scale-105 no-underline"
             >
-              Comenzar Ahora - $10.00
+              Start Now - $10.00
             </a>
             <p className="text-sm mt-4 opacity-60">
-              Garantía de 7 días • Pago único • Acceso inmediato
+              7-day guarantee • One-time payment • Instant access
             </p>
           </div>
         </footer>
@@ -125,20 +125,20 @@ const Index = () => {
         <div className="py-4 px-4 bg-muted/20 border-t border-border/50">
           <div className="max-w-4xl mx-auto text-center">
             <div className="text-xs text-muted-foreground/80 space-y-1 leading-tight">
-              <p className="font-medium text-xs mb-2">AVISO IMPORTANTE</p>
+              <p className="font-medium text-xs mb-2">IMPORTANT NOTICE</p>
               
               <p>
-                <span className="font-medium">Finalidad Comercial:</span> Este sitio tiene fines comerciales y publicitarios para promocionar NeuroActivo. 
-                <span className="font-medium ml-2">Resultados Variables:</span> Los resultados pueden variar de persona a persona y no se garantizan los mismos resultados mostrados.
+                <span className="font-medium">Commercial Purpose:</span> This site has commercial and advertising purposes to promote NeuroActive. 
+                <span className="font-medium ml-2">Variable Results:</span> Results may vary from person to person and the same results shown are not guaranteed.
               </p>
               
               <p>
-                Los testimonios, videos y contenido presentado pueden ser fictícios, dramatizaciones o generados por inteligencia artificial con fines ilustrativos y comerciales. 
-                El uso de este programa es bajo tu propia responsabilidad.
+                The testimonials, videos and content presented may be fictitious, dramatizations or generated by artificial intelligence for illustrative and commercial purposes. 
+                Use of this program is at your own responsibility.
               </p>
               
               <p className="text-xs opacity-60 mt-2">
-                © 2024 NeuroActivo. Todos los derechos reservados.
+                © 2024 NeuroActive. All rights reserved.
               </p>
             </div>
           </div>

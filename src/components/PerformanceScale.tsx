@@ -15,7 +15,7 @@ const PerformanceScale = () => {
     <section className={`py-12 px-4 transition-opacity duration-800 ${visible ? 'opacity-100' : 'opacity-0'}`}>
       <div className="max-w-4xl mx-auto">
         <h3 className="neuro-subheadline text-center mb-8">
-          Escala de Rendimiento Mental
+          Mental Performance Scale
         </h3>
         
         <div className="neuro-card">
@@ -25,15 +25,15 @@ const PerformanceScale = () => {
             
             {/* Labels */}
             <div className="flex justify-between mt-3 text-sm font-semibold">
-              <span className="text-destructive">Bajo</span>
-              <span className="text-yellow-600">Medio</span>
-              <span className="text-secondary">Alto</span>
+              <span className="text-destructive">Low</span>
+              <span className="text-yellow-600">Medium</span>
+              <span className="text-secondary">High</span>
             </div>
             
             {/* Marker Position */}
             <div className="absolute -top-12 left-12 transform -translate-x-1/2">
               <div className="bg-foreground text-background px-3 py-1 rounded-lg text-sm font-semibold relative">
-                Tú estás aquí
+                You are here
                 <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-foreground"></div>
               </div>
               {/* Stylized Arrow */}
@@ -48,10 +48,10 @@ const PerformanceScale = () => {
           
           <div className="text-center space-y-4">
             <p className="neuro-body text-muted-foreground">
-              Tu puntuación actual te sitúa en el nivel <strong className="text-destructive">Bajo</strong> de rendimiento mental.
+              Your current score places you at the <strong className="text-destructive">Low</strong> level of mental performance.
             </p>
             <p className="neuro-body text-muted-foreground">
-              Con el programa NeuroActivo, puedes mejorar significativamente tu posición en esta escala.
+              With the NeuroActive program, you can significantly improve your position on this scale.
             </p>
           </div>
         </div>

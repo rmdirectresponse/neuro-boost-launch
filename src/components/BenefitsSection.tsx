@@ -4,33 +4,33 @@ const BenefitsSection = () => {
   const benefits = [
     {
       icon: Brain,
-      title: "Ejercicios diarios personalizados",
-      description: "Rutinas adaptadas a tu nivel cognitivo actual para máxima efectividad"
+      title: "Personalized daily exercises",
+      description: "Routines adapted to your current cognitive level for maximum effectiveness"
     },
     {
       icon: TrendingUp,
-      title: "Entrenamiento mental progresivo",
-      description: "Programas que aumentan gradualmente en dificultad para garantizar mejora continua"
+      title: "Progressive mental training",
+      description: "Programs that gradually increase in difficulty to ensure continuous improvement"
     },
     {
       icon: BarChart3,
-      title: "Seguimiento del progreso en tiempo real",
-      description: "Métricas detalladas de tu evolución con gráficos fáciles de entender"
+      title: "Real-time progress tracking",
+      description: "Detailed metrics of your evolution with easy-to-understand charts"
     },
     {
       icon: Smartphone,
-      title: "Facilidad de acceso multiplataforma",
-      description: "Entrena desde cualquier dispositivo: móvil, tablet o computadora"
+      title: "Multi-platform access ease",
+      description: "Train from any device: mobile, tablet or computer"
     },
     {
       icon: Target,
-      title: "Evaluación detallada de habilidades",
-      description: "Análisis completo de memoria, atención, velocidad y flexibilidad mental"
+      title: "Detailed skills assessment",
+      description: "Complete analysis of memory, attention, speed and mental flexibility"
     },
     {
       icon: User,
-      title: "Perfil cognitivo personalizado",
-      description: "Plan único basado en tus fortalezas y áreas de mejora específicas"
+      title: "Personalized cognitive profile",
+      description: "Unique plan based on your strengths and specific areas for improvement"
     }
   ];
 
@@ -38,11 +38,11 @@ const BenefitsSection = () => {
     <section className="py-12 px-4 bg-background">
       <div className="max-w-6xl mx-auto">
         <h3 className="neuro-headline text-center mb-4">
-          Destacados de su plan
+          Your plan highlights
         </h3>
         
         <p className="text-center neuro-body text-muted-foreground mb-12">
-          Todo lo que incluye tu programa NeuroActivo personalizado
+          Everything included in your personalized NeuroActive program
         </p>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -76,10 +76,10 @@ const BenefitsSection = () => {
         <div className="text-center mt-12">
           <div className="inline-block neuro-card bg-gradient-to-r from-primary/5 to-secondary/5">
             <p className="neuro-body font-semibold text-primary mb-2">
-              + Acceso de por vida
+              + Lifetime access
             </p>
             <p className="text-sm text-muted-foreground">
-              Una sola compra, beneficios permanentes
+              One purchase, permanent benefits
             </p>
           </div>
         </div>

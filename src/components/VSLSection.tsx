@@ -11,7 +11,7 @@ const VSLSection = ({ onVideoComplete }: VSLSectionProps) => {
   const playerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // Timer para mostrar conteúdo adicional após 1min10s
+    // Timer to show additional content after 1min10s
     const timer = setTimeout(() => {
       onVideoComplete();
     }, 70000); // 70 segundos = 1min10s
@@ -52,13 +52,13 @@ const VSLSection = ({ onVideoComplete }: VSLSectionProps) => {
       <div className="max-w-4xl mx-auto text-center">
         {/* Headline */}
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6 px-2" style={{lineHeight: '1.1'}}>
-          ¡Tus resultados ya están listos! Mira el video del Dr. José para recibir tu{" "}
-          <span className="text-primary">Diagnóstico</span>
+          Your results are ready! Watch Dr. José's video to receive your{" "}
+          <span className="text-primary">Diagnosis</span>
         </h2>
         
         {/* Subheadline */}
         <p className="text-lg sm:text-xl text-muted-foreground mb-6 sm:mb-8 px-2" style={{lineHeight: '1.1'}}>
-          ¡Haz clic en el video de abajo!
+          Click on the video below!
         </p>
         
         {/* Video Container */}
