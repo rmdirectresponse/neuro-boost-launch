@@ -62,8 +62,8 @@ const VSLSection = ({ onVideoComplete }: VSLSectionProps) => {
         </p>
         
         {/* Video Container */}
-        <div className="relative max-w-3xl mx-auto px-2 sm:px-0">
-          <div ref={playerRef} className="w-full"></div>
+        <div className="relative max-w-3xl mx-auto px-2 sm:px-0 mb-8">
+          <div ref={playerRef} className="w-full min-h-[400px]"></div>
         </div>
         
       </div>
