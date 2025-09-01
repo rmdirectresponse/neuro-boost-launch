@@ -62,54 +62,8 @@ const VSLSection = ({ onVideoComplete }: VSLSectionProps) => {
         </p>
         
         {/* Video Container */}
-        <div className="relative max-w-3xl mx-auto px-2 sm:px-0 mb-8">
+        <div className="relative max-w-3xl mx-auto px-2 sm:px-0">
           <div ref={playerRef} className="w-full min-h-[400px]"></div>
-        </div>
-        
-        {/* Offer Section */}
-        <div className="mt-8 max-w-2xl mx-auto">
-          <div className="bg-card rounded-lg p-6 lg:p-8 shadow-lg bg-gradient-to-br from-primary/5 to-secondary/5 border-2 border-primary/20">
-            <div className="text-center">
-              {/* Opportunity Badge */}
-              <div className="inline-block bg-primary text-primary-foreground px-4 sm:px-6 py-2 rounded-full font-bold text-base sm:text-lg mb-4 sm:mb-6">
-                ¡Oportunidad Única!
-              </div>
-              
-              <h4 className="text-xl sm:text-2xl font-bold mb-4" style={{lineHeight: '1.1'}}>
-                Prueba completa con análisis + Material de ejercicios
-              </h4>
-              
-              {/* Price */}
-              <div className="mb-4 sm:mb-6">
-                <div className="flex items-center justify-center gap-2 sm:gap-3 mb-2 flex-wrap">
-                  <span className="text-2xl sm:text-3xl font-bold text-secondary">$10,00</span>
-                  <span className="bg-destructive text-destructive-foreground px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm font-bold">
-                    36% OFF
-                  </span>
-                </div>
-                <p className="text-muted-foreground line-through text-sm sm:text-base">Precio regular: $27,50</p>
-              </div>
-              
-              {/* Urgency Message */}
-              <div className="flex items-center justify-center gap-2 mb-4 sm:mb-6 text-destructive">
-                <span className="font-semibold text-sm sm:text-base">Esta oferta expira pronto</span>
-              </div>
-              
-              {/* CTA Button - Now redirects to Kiwify */}
-              <a 
-                href="https://pay.kiwify.com/O6nCmTA"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block w-full sm:w-auto bg-neuro-green hover:bg-neuro-green-dark text-white font-bold py-4 px-8 sm:px-12 rounded-full text-lg sm:text-xl transform transition-all duration-300 hover:scale-105 shadow-lg animate-pulse-glow mb-4 text-center no-underline"
-              >
-                ¡Ver Oportunidad Única!
-              </a>
-              
-              <p className="text-xs sm:text-sm text-muted-foreground" style={{lineHeight: '1.1'}}>
-                Acceso inmediato • Garantía de 7 días • Sin suscripciones
-              </p>
-            </div>
-          </div>
         </div>
         
       </div>
