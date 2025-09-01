@@ -11,18 +11,18 @@ const VSLSection = ({ onVideoComplete }: VSLSectionProps) => {
   const playerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // Timer desabilitado - contenido visible imediatamente
-    // const timer = setInterval(() => {
-    //   setVideoTime(prev => {
-    //     const newTime = prev + 1;
-    //     if (newTime === 71) {
-    //       onVideoComplete();
-    //     }
-    //     return newTime;
-    //   });
-    // }, 1000);
+    // Timer ativado - conteúdo aparece após 1 minuto e 10 segundos
+    const timer = setInterval(() => {
+      setVideoTime(prev => {
+        const newTime = prev + 1;
+        if (newTime === 70) {
+          onVideoComplete();
+        }
+        return newTime;
+      });
+    }, 1000);
 
-    // return () => clearInterval(timer);
+    return () => clearInterval(timer);
   }, [onVideoComplete]);
 
   useEffect(() => {
