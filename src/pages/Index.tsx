@@ -11,7 +11,7 @@ import ProductSection from "@/components/ProductSection";
 import GuaranteeSection from "@/components/GuaranteeSection";
 
 const Index = () => {
-  const [showAdditionalContent, setShowAdditionalContent] = useState(true);
+  const [showAdditionalContent, setShowAdditionalContent] = useState(false);
 
   const handleVideoComplete = () => {
     setShowAdditionalContent(true);
