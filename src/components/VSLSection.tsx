@@ -71,7 +71,13 @@ const VSLSection = ({ onVideoComplete }: VSLSectionProps) => {
         
         {/* Video Container */}
         <div className="relative max-w-3xl mx-auto px-2 sm:px-0">
-          <div ref={playerRef} className="w-full"></div>
+          <div ref={playerRef} className="w-full min-h-[300px] sm:min-h-[400px] bg-muted rounded-lg flex items-center justify-center">
+            {/* Fallback while video loads */}
+            <div className="text-center p-8">
+              <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto mb-4"></div>
+              <p className="text-muted-foreground">Cargando video...</p>
+            </div>
+          </div>
         </div>
         
         {/* Offer Section - Aparece após 1min10s */}
