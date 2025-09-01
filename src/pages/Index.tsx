@@ -11,7 +11,7 @@ import ProductSection from "@/components/ProductSection";
 import GuaranteeSection from "@/components/GuaranteeSection";
 
 const Index = () => {
-  const [showAdditionalContent, setShowAdditionalContent] = useState(true);
+  const [showAdditionalContent, setShowAdditionalContent] = useState(false);
 
   const handleVideoComplete = () => {
     setShowAdditionalContent(true);
@@ -26,7 +26,7 @@ const Index = () => {
       <VSLSection onVideoComplete={handleVideoComplete} />
       
       {/* Additional Content - Hidden until 1min11s */}
-      <div className={`transition-all duration-1000 ${showAdditionalContent ? 'opacity-100' : 'neuro-hidden'}`}>
+      <div className={`transition-all duration-1000 ${showAdditionalContent ? 'opacity-100' : 'opacity-0 h-0 overflow-hidden'}`}>
         
         {/* Test Results Section */}
         <TestResultsSection />
