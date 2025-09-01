@@ -8,14 +8,16 @@ interface VSLSectionProps {
 
 const VSLSection = ({ onVideoComplete }: VSLSectionProps) => {
   const [videoTime, setVideoTime] = useState(0);
+  const [showOffer, setShowOffer] = useState(false);
   const playerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // Timer ativado - conteúdo aparece após 1 minuto e 10 segundos
+    // Timer para mostrar a oferta após 1 minuto e 10 segundos
     const timer = setInterval(() => {
       setVideoTime(prev => {
         const newTime = prev + 1;
         if (newTime === 70) {
+          setShowOffer(true);
           onVideoComplete();
         }
         return newTime;
@@ -72,8 +74,9 @@ const VSLSection = ({ onVideoComplete }: VSLSectionProps) => {
           <div ref={playerRef} className="w-full"></div>
         </div>
         
-        {/* Offer Section */}
-        <div className="mt-8 max-w-2xl mx-auto">
+        {/* Offer Section - Aparece após 1min10s */}
+        {showOffer && (
+        <div className="mt-8 max-w-2xl mx-auto animate-fade-in">
           <div className="bg-card rounded-lg p-6 lg:p-8 shadow-lg bg-gradient-to-br from-primary/5 to-secondary/5 border-2 border-primary/20">
             <div className="text-center">
               {/* Opportunity Badge */}
@@ -117,6 +120,7 @@ const VSLSection = ({ onVideoComplete }: VSLSectionProps) => {
             </div>
           </div>
         </div>
+        )}
       </div>
     </section>
   );
