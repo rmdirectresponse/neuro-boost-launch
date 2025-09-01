@@ -29,7 +29,7 @@ const Index = () => {
       <div className={`transition-all duration-1000 ${showAdditionalContent ? 'opacity-100' : 'opacity-0 h-0 overflow-hidden'}`}>
         
         {/* Offer Section */}
-        <div className="-mt-24 sm:-mt-4 relative z-10 max-w-2xl mx-auto px-4">
+        <div className="-mt-32 sm:-mt-4 relative z-10 max-w-2xl mx-auto px-4">
           <div className="bg-card rounded-lg p-6 lg:p-8 shadow-lg bg-gradient-to-br from-primary/5 to-secondary/5 border-2 border-primary/20">
             <div className="text-center">
               {/* Opportunity Badge */}
