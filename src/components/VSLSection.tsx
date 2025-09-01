@@ -8,23 +8,21 @@ interface VSLSectionProps {
 
 const VSLSection = ({ onVideoComplete }: VSLSectionProps) => {
   const [videoTime, setVideoTime] = useState(0);
-  const [showOffer, setShowOffer] = useState(false);
   const playerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // Timer para mostrar a oferta após 1 minuto e 10 segundos
-    const timer = setInterval(() => {
-      setVideoTime(prev => {
-        const newTime = prev + 1;
-        if (newTime === 70) {
-          setShowOffer(true);
-          onVideoComplete();
-        }
-        return newTime;
-      });
-    }, 1000);
+    // Timer desabilitado - contenido visible imediatamente
+    // const timer = setInterval(() => {
+    //   setVideoTime(prev => {
+    //     const newTime = prev + 1;
+    //     if (newTime === 71) {
+    //       onVideoComplete();
+    //     }
+    //     return newTime;
+    //   });
+    // }, 1000);
 
-    return () => clearInterval(timer);
+    // return () => clearInterval(timer);
   }, [onVideoComplete]);
 
   useEffect(() => {
@@ -71,18 +69,11 @@ const VSLSection = ({ onVideoComplete }: VSLSectionProps) => {
         
         {/* Video Container */}
         <div className="relative max-w-3xl mx-auto px-2 sm:px-0">
-          <div ref={playerRef} className="w-full min-h-[300px] sm:min-h-[400px] bg-muted rounded-lg flex items-center justify-center">
-            {/* Fallback while video loads */}
-            <div className="text-center p-8">
-              <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto mb-4"></div>
-              <p className="text-muted-foreground">Cargando video...</p>
-            </div>
-          </div>
+          <div ref={playerRef} className="w-full"></div>
         </div>
         
-        {/* Offer Section - Aparece após 1min10s */}
-        {showOffer && (
-        <div className="mt-8 max-w-2xl mx-auto animate-fade-in">
+        {/* Offer Section */}
+        <div className="mt-8 max-w-2xl mx-auto">
           <div className="bg-card rounded-lg p-6 lg:p-8 shadow-lg bg-gradient-to-br from-primary/5 to-secondary/5 border-2 border-primary/20">
             <div className="text-center">
               {/* Opportunity Badge */}
@@ -126,7 +117,6 @@ const VSLSection = ({ onVideoComplete }: VSLSectionProps) => {
             </div>
           </div>
         </div>
-        )}
       </div>
     </section>
   );
