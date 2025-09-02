@@ -51,15 +51,9 @@ const VSLSection = ({ onVideoComplete }: VSLSectionProps) => {
     <section className="bg-background py-4 sm:py-6 px-4 pb-0 sm:pb-4">
       <div className="max-w-4xl mx-auto text-center">
         {/* Headline */}
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6 px-2" style={{lineHeight: '1.1'}}>
-          {"Your results are ready! Watch Dr. José's video to receive your"}{" "}
-          <span className="text-primary">Diagnosis</span>
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6 sm:mb-8 px-2" style={{lineHeight: '1.1'}}>
+          {"Your results are ready! Watch Dr. José's video to receive your Diagnosis"}
         </h2>
-        
-        {/* Subheadline */}
-        <p className="text-lg sm:text-xl text-muted-foreground mb-6 sm:mb-8 px-2" style={{lineHeight: '1.1'}}>
-          Click on the video below!
-        </p>
         
         {/* Video Container */}
         <div className="relative max-w-3xl mx-auto px-2 sm:px-0 mb-0">
