@@ -52,8 +52,8 @@ const VSLSection = ({ onVideoComplete }: VSLSectionProps) => {
       <div className="max-w-4xl mx-auto text-center">
         {/* Headline */}
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6 px-2" style={{lineHeight: '1.1'}}>
-          Your results are ready! Watch Dr. José's video to receive your{" "}
-          <span className="text-primary">Diagnosis</span>
+          Your results are ready! Watch the video to get your{" "}
+          <span className="text-primary">diagnosis</span>
         </h2>
         
         {/* Subheadline */}
