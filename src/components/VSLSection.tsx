@@ -21,10 +21,10 @@ const VSLSection = ({ onVideoComplete }: VSLSectionProps) => {
 
   useEffect(() => {
     // Load vturb player script and create player element
-    if (playerRef.current && !document.querySelector('#vid-68b2581b2a3de119c45c2154')) {
+    if (playerRef.current && !document.querySelector('#vid-68b6486ae79b89c9bd266665')) {
       // Create vturb-smartplayer element
       const playerElement = document.createElement('vturb-smartplayer');
-      playerElement.setAttribute('id', 'vid-68b2581b2a3de119c45c2154');
+      playerElement.setAttribute('id', 'vid-68b6486ae79b89c9bd266665');
       playerElement.style.display = 'block';
       playerElement.style.margin = '0 auto';
       playerElement.style.width = '100%';
@@ -32,9 +32,9 @@ const VSLSection = ({ onVideoComplete }: VSLSectionProps) => {
       playerRef.current.appendChild(playerElement);
       
       // Load script if not already loaded
-      if (!document.querySelector('script[src*="68b2581b2a3de119c45c2154"]')) {
+      if (!document.querySelector('script[src*="68b6486ae79b89c9bd266665"]')) {
         const script = document.createElement('script');
-        script.src = 'https://scripts.converteai.net/1a6f3b4b-51fd-49a8-b4bb-593f4d735ddc/players/68b2581b2a3de119c45c2154/v4/player.js';
+        script.src = 'https://scripts.converteai.net/1a6f3b4b-51fd-49a8-b4bb-593f4d735ddc/players/68b6486ae79b89c9bd266665/v4/player.js';
         script.async = true;
         document.head.appendChild(script);
       }
