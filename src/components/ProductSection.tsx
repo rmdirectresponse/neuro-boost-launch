@@ -8,7 +8,7 @@ const ProductSection = () => {
           <div className="order-2 lg:order-1">
             <div className="relative">
               <img
-                src="/lovable-uploads/f5135ddb-d953-4392-9115-7f2bda4591d1.png"
+                src="/lovable-uploads/4914a83b-1e4b-4663-ba59-62d422b77dc1.png"
                 alt="NeuroActive Mental Exercise Program"
                 className="w-full h-auto rounded-2xl shadow-2xl"
               />
