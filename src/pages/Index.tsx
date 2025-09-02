@@ -44,12 +44,12 @@ const Index = () => {
               {/* Price */}
               <div className="mb-4 sm:mb-6">
                 <div className="flex items-center justify-center gap-2 sm:gap-3 mb-2 flex-wrap">
-                  <span className="text-2xl sm:text-3xl font-bold text-secondary">$10.00</span>
+                  <span className="text-2xl sm:text-3xl font-bold text-secondary">$17.00</span>
                   <span className="bg-destructive text-destructive-foreground px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm font-bold">
                     36% OFF
                   </span>
                 </div>
-                <p className="text-muted-foreground line-through text-sm sm:text-base">Regular price: $27.50</p>
+                <p className="text-muted-foreground line-through text-sm sm:text-base">Regular price: $37.50</p>
               </div>
               
               {/* Urgency Message */}
@@ -113,7 +113,7 @@ const Index = () => {
               rel="noopener noreferrer"
               className="inline-block bg-secondary hover:bg-secondary/90 text-secondary-foreground font-bold py-4 px-12 rounded-full text-xl transform transition-all duration-300 hover:scale-105 no-underline"
             >
-              Start Now - $10.00
+              Start Now - $17.00
             </a>
             <p className="text-sm mt-4 opacity-60">
               7-day guarantee • One-time payment • Instant access
