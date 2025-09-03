@@ -71,9 +71,9 @@ const ProductSection = () => {
                   {/* Price */}
                   <div className="mb-4 sm:mb-6">
                     <div className="flex items-center justify-center gap-2 sm:gap-3 mb-2 flex-wrap">
-                      <span className="text-2xl sm:text-3xl font-bold text-secondary">$17.00</span>
+                      <span className="text-2xl sm:text-3xl font-bold text-secondary">$10.00</span>
                       <span className="bg-destructive text-destructive-foreground px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm font-bold">
-                        45% OFF
+                        73% OFF
                       </span>
                     </div>
                     <p className="text-muted-foreground line-through text-sm sm:text-base">Precio regular: $37.50</p>
