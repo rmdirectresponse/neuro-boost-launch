@@ -13,11 +13,11 @@ const GuaranteeSection = () => {
         </div>
         
         <h3 className="neuro-headline mb-6">
-          <span className="text-secondary">7-Day</span> Guarantee
+          Garantía de <span className="text-secondary">7 Días</span>
         </h3>
         
         <p className="neuro-subheadline text-muted-foreground mb-8">
-          Visible results in 4 weeks or money back
+          Resultados visibles en 4 semanas o te devolvemos el dinero
         </p>
         
         {/* Guarantee Details */}
@@ -28,10 +28,10 @@ const GuaranteeSection = () => {
             <div className="flex items-start gap-4">
               <CheckCircle className="w-8 h-8 text-secondary flex-shrink-0 mt-1" />
               <div className="text-left">
-                <h4 className="font-bold text-lg mb-2">Our Promise</h4>
+                <h4 className="font-bold text-lg mb-2">Nuestra Promesa</h4>
                 <p className="neuro-body text-muted-foreground">
-                  If you don't see significant improvements in your memory and concentration 
-                  after 4 weeks of consistent use, we'll refund 100% of your money.
+                  Si no ves mejoras significativas en tu memoria y concentración 
+                  después de 4 semanas de uso constante, te reembolsaremos el 100% de tu dinero.
                 </p>
               </div>
             </div>
@@ -40,10 +40,10 @@ const GuaranteeSection = () => {
             <div className="flex items-start gap-4">
               <RefreshCw className="w-8 h-8 text-primary flex-shrink-0 mt-1" />
               <div className="text-left">
-                <h4 className="font-bold text-lg mb-2">Simple Process</h4>
+                <h4 className="font-bold text-lg mb-2">Proceso Simple</h4>
                 <p className="neuro-body text-muted-foreground">
-                  Send an email explaining your experience and we'll process 
-                  your full refund in 2-3 business days. No complicated questions.
+                  Envía un email explicando tu experiencia y procesaremos 
+                  tu reembolso completo en 2-3 días hábiles. Sin preguntas complicadas.
                 </p>
               </div>
             </div>
@@ -54,7 +54,7 @@ const GuaranteeSection = () => {
         <div className="mt-12">
           <div className="inline-block bg-secondary/10 px-8 py-4 rounded-full">
             <p className="font-bold text-secondary text-lg">
-              💡 Try NeuroActive completely risk-free
+              💡 Prueba NeuroActive completamente sin riesgo
             </p>
           </div>
           
@@ -65,10 +65,10 @@ const GuaranteeSection = () => {
               rel="noopener noreferrer"
               className="neuro-cta-primary text-xl px-12 py-4 inline-block"
             >
-              Start My Mental Transformation
+              Comienza Mi Transformación Mental
             </a>
             <p className="text-sm text-muted-foreground mt-3">
-              Backed by our unconditional 7-day guarantee
+              Respaldado por nuestra garantía incondicional de 7 días
             </p>
           </div>
         </div>
@@ -79,7 +79,7 @@ const GuaranteeSection = () => {
             <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
               <Shield className="w-6 h-6 text-primary" />
             </div>
-            <p className="font-semibold">Secure Payment</p>
+            <p className="font-semibold">Pago Seguro</p>
             <p className="text-sm text-muted-foreground">SSL 256-bit</p>
           </div>
           
@@ -87,16 +87,16 @@ const GuaranteeSection = () => {
             <div className="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-3">
               <CheckCircle className="w-6 h-6 text-secondary" />
             </div>
-            <p className="font-semibold">No Renewal</p>
-            <p className="text-sm text-muted-foreground">One-time payment</p>
+            <p className="font-semibold">Sin Renovación</p>
+            <p className="text-sm text-muted-foreground">Pago único</p>
           </div>
           
           <div className="text-center">
             <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-3">
               <RefreshCw className="w-6 h-6 text-accent" />
             </div>
-            <p className="font-semibold">24/7 Support</p>
-            <p className="text-sm text-muted-foreground">Immediate help</p>
+            <p className="font-semibold">Soporte 24/7</p>
+            <p className="text-sm text-muted-foreground">Ayuda inmediata</p>
           </div>
         </div>
       </div>

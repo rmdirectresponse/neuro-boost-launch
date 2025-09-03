@@ -52,13 +52,13 @@ const VSLSection = ({ onVideoComplete }: VSLSectionProps) => {
       <div className="max-w-4xl mx-auto text-center">
         {/* Headline */}
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6 px-2" style={{lineHeight: '1.1'}}>
-          Your results are ready! Watch the video to get your{" "}
-          <span className="text-primary">diagnosis</span>
+          ¡Tus resultados están listos! Mira el video para obtener tu{" "}
+          <span className="text-primary">diagnóstico</span>
         </h2>
         
         {/* Subheadline */}
         <p className="text-lg sm:text-xl text-muted-foreground mb-6 sm:mb-8 px-2" style={{lineHeight: '1.1'}}>
-          Click on the video below!
+          ¡Haz clic en el video de abajo!
         </p>
         
         {/* Video Container */}

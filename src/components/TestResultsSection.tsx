@@ -46,7 +46,7 @@ const TestResultsSection = () => {
         {/* Section Title */}
         <div className="text-center mb-8 sm:mb-12">
           <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center mb-4 px-2" style={{lineHeight: '1.1'}}>
-            Get your results today and exclusive material with mental techniques and exercises
+            Obtén tus resultados hoy y material exclusivo con técnicas y ejercicios mentales
           </h3>
         </div>
 
@@ -85,7 +85,7 @@ const TestResultsSection = () => {
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center">
                     <div className="text-3xl sm:text-4xl font-bold text-primary mb-1">{animatedProgress}%</div>
-                    <div className="text-xs sm:text-sm text-muted-foreground font-semibold">YOUR SCORE</div>
+                    <div className="text-xs sm:text-sm text-muted-foreground font-semibold">TU PUNTUACIÓN</div>
                   </div>
                 </div>
               </div>
@@ -98,17 +98,17 @@ const TestResultsSection = () => {
                   <Brain className="w-8 sm:w-12 h-8 sm:h-12 text-primary" />
                 </div>
                 <div>
-                  <p className="text-base sm:text-lg font-semibold text-muted-foreground mb-2">Result:</p>
-                  <p className="text-2xl sm:text-3xl font-bold text-destructive">Poor</p>
+                  <p className="text-base sm:text-lg font-semibold text-muted-foreground mb-2">Resultado:</p>
+                  <p className="text-2xl sm:text-3xl font-bold text-destructive">Deficiente</p>
                 </div>
               </div>
               
               <div className="space-y-2 text-muted-foreground text-sm sm:text-base">
                 <p style={{lineHeight: '1.1'}}>
-                  Your score indicates there are important areas for improvement in your cognitive performance.
+                  Tu puntuación indica que hay áreas importantes para mejorar en tu rendimiento cognitivo.
                 </p>
                 <p style={{lineHeight: '1.1'}}>
-                  The NeuroActive material is specifically designed to help you improve these results.
+                  El material NeuroActive está específicamente diseñado para ayudarte a mejorar estos resultados.
                 </p>
               </div>
             </div>

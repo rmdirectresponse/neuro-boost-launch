@@ -5,7 +5,7 @@ const DetailedResultsOffer = () => {
     <section id="oferta-unica" className="py-8 sm:py-12 px-4 bg-muted/30">
       <div className="max-w-4xl mx-auto">
         <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center mb-6 sm:mb-8 px-2" style={{lineHeight: '1.1'}}>
-          Your memory and concentration results
+          Tus resultados de memoria y concentración
         </h3>
         
         {/* Blurred Results Preview */}
@@ -26,8 +26,8 @@ const DetailedResultsOffer = () => {
               <div className="absolute inset-0 bg-black/20 flex items-center justify-center rounded-lg p-4">
                   <div className="text-center bg-white/95 p-4 sm:p-6 rounded-xl shadow-lg max-w-sm">
                     <Lock className="w-8 sm:w-12 h-8 sm:h-12 text-primary mx-auto mb-2 sm:mb-3" />
-                    <h4 className="text-lg sm:text-xl font-bold mb-2">Detailed Results</h4>
-                    <p className="text-muted-foreground text-sm sm:text-base">Unlocked with complete material</p>
+                    <h4 className="text-lg sm:text-xl font-bold mb-2">Resultados Detallados</h4>
+                    <p className="text-muted-foreground text-sm sm:text-base">Desbloqueado con material completo</p>
                   </div>
               </div>
             </div>
@@ -37,10 +37,10 @@ const DetailedResultsOffer = () => {
         {/* CTA Section */}
         <div className="text-center mb-6 sm:mb-8 px-2">
           <p className="text-lg sm:text-xl mb-4" style={{lineHeight: '1.1'}}>
-            Get your material here and the detailed test results.
+            Obtén tu material aquí y los resultados detallados del test.
           </p>
           <p className="text-primary font-bold text-base sm:text-lg mb-4 sm:mb-6" style={{lineHeight: '1.1'}}>
-            Limited time offer!
+            ¡Oferta por tiempo limitado!
           </p>
         </div>
 
@@ -49,11 +49,11 @@ const DetailedResultsOffer = () => {
           <div className="text-center">
             {/* Opportunity Badge */}
             <div className="inline-block bg-primary text-primary-foreground px-4 sm:px-6 py-2 rounded-full font-bold text-base sm:text-lg mb-4 sm:mb-6">
-              Unique Opportunity!
+              ¡Oportunidad Única!
             </div>
             
             <h4 className="text-xl sm:text-2xl font-bold mb-4 px-2" style={{lineHeight: '1.1'}}>
-              Complete test with analysis + Exercise material
+              Test completo con análisis + Material de ejercicios
             </h4>
             
             {/* Price */}
@@ -64,13 +64,13 @@ const DetailedResultsOffer = () => {
                   45% OFF
                 </span>
               </div>
-              <p className="text-muted-foreground line-through text-sm sm:text-base">Regular price: $37.50</p>
+              <p className="text-muted-foreground line-through text-sm sm:text-base">Precio regular: $37.50</p>
             </div>
             
             {/* Urgency Timer */}
             <div className="flex items-center justify-center gap-2 mb-4 sm:mb-6 text-destructive">
               <Clock className="w-4 sm:w-5 h-4 sm:h-5" />
-              <span className="font-semibold text-sm sm:text-base">This offer expires soon</span>
+              <span className="font-semibold text-sm sm:text-base">Esta oferta expira pronto</span>
             </div>
             
             {/* CTA Button */}
@@ -80,11 +80,11 @@ const DetailedResultsOffer = () => {
               rel="noopener noreferrer"
               className="inline-block w-full sm:w-auto bg-neuro-green hover:bg-neuro-green-dark text-white font-bold py-4 px-8 sm:px-12 rounded-full text-lg sm:text-xl transform transition-all duration-300 hover:scale-105 shadow-lg animate-pulse-glow mb-4 text-center no-underline"
             >
-              See Unique Opportunity!
+              ¡Ver Oportunidad Única!
             </a>
             
             <p className="text-xs sm:text-sm text-muted-foreground px-2" style={{lineHeight: '1.1'}}>
-              Instant access • 7-day guarantee • No subscriptions
+              Acceso instantáneo • Garantía de 7 días • Sin suscripciones
             </p>
           </div>
         </div>
