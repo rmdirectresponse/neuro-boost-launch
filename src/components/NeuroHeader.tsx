@@ -9,8 +9,8 @@ const NeuroHeader = () => {
         <div className="max-w-7xl mx-auto">
           <div className="flex items-center justify-center">
             <img
-              src="/lovable-uploads/8d0391ba-b8b1-4993-affe-b43ca306eabc.png"
-              alt="NeuroActive - Mental Exercise Program"
+              src="/lovable-uploads/3f0fe036-d245-4f89-82eb-ba9aab355837.png"
+              alt="NeuroActivo - Programa de Ejercicios Mentales"
               className="h-24 w-auto"
             />
           </div>
