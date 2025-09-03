@@ -8,8 +8,8 @@ const ProductSection = () => {
           <div className="order-2 lg:order-1">
             <div className="relative">
               <img
-                src="/lovable-uploads/4914a83b-1e4b-4663-ba59-62d422b77dc1.png"
-                alt="NeuroActive Mental Exercise Program"
+                src="/lovable-uploads/aa92882a-52e4-461f-a640-5859835a8b0d.png"
+                alt="Programa de Ejercicios Mentales NeuroActivo"
                 className="w-full h-auto rounded-2xl shadow-2xl"
               />
               
